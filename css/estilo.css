@@ -1,0 +1,524 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a37bc9;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+
+.header-comshadow{
+    background-color: #000000;
+    filter:drop-shadow(0px -6px 7px #f0f0f0) 
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    padding-left: 220px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    color: #fff;
+}
+
+.nav-link:hover{
+    color:#d3d3d3;
+}
+
+.carrinho{
+    height: 26px;
+    padding-left: 60px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.imglogin{
+    padding-left: 130px;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.entrar{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.entrar a{
+    text-decoration: none;
+}
+
+.cadastrar a{
+    text-decoration: none;
+}
+
+.botao-entrar{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
+
+.p2{
+    color: #d3d3d3;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.botao-cadastrar{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.botao-cadastrar a{
+    text-decoration: none;
+}
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.todos-produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    background-image: linear-gradient(#221231,#341f47,#140420);
+    background-color:  #221231;
+}
+
+.produtos{
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    width: 240px;
+    height: 470px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 2rem;
+}
+
+.produtos:hover img{
+    scale: 1.1;
+}
+
+.produtos:hover{
+    box-shadow: 2px -1px 17px #eeeeee;
+}
+
+.produtos img{
+    height: 200px;
+    margin: 1rem;
+    transition: all 0.5s;
+}
+
+.produtos button:hover{
+    transform: scale(1.1);
+}
+
+.comprar{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background-color: black;
+    padding: 1.4rem 5rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    transition: all 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.form-entrar{
+    background-color:#000000 ;
+}
+
+.form-popup{
+    border-radius:10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    width: 100%;
+    border: 2px solid #ffffff;
+    transform: translate(-50%, -60%);
+    background-image: linear-gradient(#000000,#292929,#000000);
+}
+
+.form-popup img{
+    position: absolute;
+    height: 15px;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    color: #878484;
+}
+
+.form-popup .form-box{
+    display: flex;
+}
+
+.form-box .form-details{
+    max-width: 330px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-box h4{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.form-box p{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.form-box .form-content{
+    width: 100%;
+    padding: 60px;
+}
+
+form .input-field{
+    height: 43px;
+    width: 300px;
+    margin-top: 20px;
+    position: relative;
+}
+
+form .input-field input{
+    width: 100%;
+    height: 100%;
+    font-size: 0.95rem;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form .input-field label{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 15px;
+    color: #717171;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.input-field input:is(:focus, :valid) ~ label{
+    font-size: 0.70rem;
+    transform: translatey(-160%);
+}
+
+.form-box a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.form-box a:hover{
+    text-decoration: underline cornflowerblue;
+}
+
+.form-box .policy-text{
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 0.95rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#ffffff;
+}
+
+form button:hover{
+    background: #0097a7;
+}
+
+.form-box .bottom-link{
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+.form-popup .signup{
+    display: none;
+}
+
+form button{
+    width: 332px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 0;
+    border-radius: 5px;
+    margin: 25px 0;
+    color: #fff;
+    background-color: #00bcd4;
+    cursor: pointer;
+}
+
+.login .policy-text{
+    display: flex;
+    align-items: center;
+}
+
+.login .policy-text input{
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+}
+
+.cart-table{
+    padding-left: 28%;
+    padding-right: 15%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.table-head-item{
+    text-align: start;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.segunda-col, .terceira-col{
+    width: 30%;
+}
+
+.segunda-col{
+    transform: translateX(-12px);
+}
+
+.terceira-col{
+    transform: translateX(-22px);
+}
+
+.corpo{
+    background-image: linear-gradient(70deg, rgb(189, 189, 189)10%,rgb(228, 228, 228) 50%,rgb(189, 189, 189)70%);
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 30px 30px;
+}
+
+.page-title{
+    font-size: 40px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+
+}
+
+.content section{
+    flex: 1;
+}
+
+.content aside{
+    margin-left: 40px;
+    min-width: 250px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr{
+    border-bottom: 1px solid #000000;
+}
+
+thead th{
+    text-align: left;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+tbody tr{
+    border-bottom: 1px solid #000000;
+}
+
+tbody tr:last-child{ 
+    border:0;
+}
+
+tbody td{
+    padding: 30px 0;
+}
+
+tbody button{
+    cursor: pointer;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product img{
+    border-radius: 6px;
+    width: 84px;
+    height: 100px;
+}
+
+.product .info{
+   margin-left: 15px; 
+}
+
+.product .name{
+    font-size: 15px;
+}
+
+.remove{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    background: #ffffff;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.remove:hover{
+    background: #e7e7e7;
+}
+
+.quantidade{
+    background: #ffffff;
+    width: 100px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 60px;
+    border: none;
+    border: 2px solid #575757;
+}
+
+.box{
+    margin-bottom: 15px;
+    background: #ddd;
+}
+
+.box header{
+    padding: 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #000000;
+}
+
+.box .info{
+    padding: 20px ;
+    padding-bottom: 0;
+}
+
+.box .info > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.espacamento1{
+    padding-bottom: 30px;
+}
+
+.espacamento2{
+    padding-bottom: 17px;
+}
+
+
+.box footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: #cfcfcf;
+    font-size: 18px;
+}
+
+
+.button-finalizar{
+    color: white;
+    background: #059205;
+    padding: 20px 20px;
+    border: 0;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.button-finalizar:hover{
+    background: green;
+    cursor: pointer;
+}
