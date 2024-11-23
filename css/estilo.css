@@ -184,7 +184,13 @@ p{
     cursor: pointer;
 }
 
-.corpo-login-cadastro{
+.corpo-login{
+    background-image: url(../imagens/fundo.login4.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.corpo-cadastro{
     background-image: url(../imagens/fundo.login4.avif);
     background-repeat: no-repeat;
     background-size: cover;
