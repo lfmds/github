@@ -184,10 +184,6 @@ p{
     cursor: pointer;
 }
 
-.form-entrar{
-    background-color:#000000 ;
-}
-
 .form-popup{
     border-radius:10px;
     position: fixed;
@@ -195,7 +191,6 @@ p{
     left: 50%;
     max-width: 720px;
     width: 100%;
-    border: 2px solid #ffffff;
     transform: translate(-50%, -60%);
     background-image: linear-gradient(#000000,#292929,#000000);
 }
@@ -434,7 +429,7 @@ tbody button{
    margin-left: 15px; 
 }
 
-.product .name{
+.product .name-product{
     font-size: 15px;
 }
 
