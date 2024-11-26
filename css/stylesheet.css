@@ -198,6 +198,7 @@ p{
     border: 2px solid #ffffff;
     transform: translate(-50%, -60%);
     background-image: linear-gradient(#000000,#292929,#000000);
+    margin: 8vh auto;
 }
 
 .form-popup img{
@@ -211,6 +212,8 @@ p{
 
 .form-popup .form-box{
     display: flex;
+    /* margin: 150px auto; */
+
 }
 
 .form-box .form-details{
@@ -521,4 +524,11 @@ tbody button{
 .button-finalizar:hover{
     background: green;
     cursor: pointer;
+}
+
+.erro_cadForm{
+    color: white;
+    font-size: 12px;
+    /* margin-left: 0px; */
+    height: 2em;
 }
