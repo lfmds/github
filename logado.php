@@ -10,7 +10,7 @@ include("conexao.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/stylesheet.css" type="text/css">
     <title>Document</title>
     <script async src="loja.js"></script>
 </head>
@@ -24,10 +24,11 @@ include("conexao.php");
                         <h3>INFOTEC</h3>
                     </a>
                     <ul>
-                        <li class="nav-item"><a href="index.html" class="nav-link">Menu</a></li>
-                        <li class="nav-item"><a href="celulares.html" class="nav-link">Celulares</a></li>
-                        <li class="nav-item"><a href="monitores.html" class="nav-link">Monitores</a></li>
-                        <li class="nav-item"><a href="perifericos.html" class="nav-link">Periféricos</a></li>
+                        <li class="printTable"><a href="index.html" class="nav-link">Menu</a></li>
+                        <li class="printTable"><a href="celulares.html" class="nav-link">Celulares</a></li>
+                        <li class="printTable"><a href="monitores.html" class="nav-link">Monitores</a></li>
+                        <li class="printTable"><a href="perifericos.html" class="nav-link">Periféricos</a></li>
+                        <li class="printTable"><a href="imprime_tabela.php" class="nav-printTable">Imprimir Tabela</a></li>
                     </ul>
                 </div>
 
