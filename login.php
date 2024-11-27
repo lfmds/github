@@ -31,10 +31,9 @@ if (isset($_POST["authemail"]) || isset($_POST["authpassword"])) { // Verifica s
                 <SCRIPT LANGUAGE='JavaScript'>
                     var userName = '" . $_SESSION["name"] . "';
                     window.alert('Bem-Vindo ' + userName);
-                    window.location.href = 'teste.php';
                 </SCRIPT>
             ");
-        header("Location: teste.php");
+        header("Location: logado.php");
     } else {
         echo ("
                 <SCRIPT LANGUAGE='JavaScript'>
@@ -52,7 +51,7 @@ if (isset($_POST["authemail"]) || isset($_POST["authpassword"])) { // Verifica s
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/stylesheet.css" text="text/css">
+    <link rel="stylesheet" href="./css/style.css" text="text/css">
     <script src="main.js"></script>
     <title>Login</title>
 </head>

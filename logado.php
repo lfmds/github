@@ -1,3 +1,9 @@
+<?php
+session_start();
+include("conexao.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,17 +36,17 @@
                     <div class="alinhamento">
                         <div class="entrar">
                             <a href="login.php" id="entrar">
-                                <p class="botao-entrar">Entrar</p>
+                                <p class="botao-entrar">Bem-Vindo</p>
                             </a>
-                            <p class="p2">ou</p>
+                            <!-- <p class="p2">ou</p> -->
                         </div>
                         <div class="cadastrar">
                             <a href="cadastro.php" id="cadastrar">
-                                <p class="botao-cadastrar">Cadastre-se</p>
+                                <p class="botao-cadastrar"><?php echo $_SESSION["name"];?></p>
                             </a>
                         </div>
                     </div>
-                    <a href="carrinho.html"><img src="imagens/carrinho-carrinho (1).png" class="carrinho"></a>
+                    <a href="index.html"><img src="imagens/icons8-sair-50 (1).png" class="carrinho"></a>
                 </div>
         </nav>
     </header>

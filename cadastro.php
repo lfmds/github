@@ -60,7 +60,7 @@ if (isset($_POST["name"]) || isset($_POST["surname"]) || isset($_POST["email"]) 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/stylesheet.css" text="text/css">
+    <link rel="stylesheet" href="./css/style.css" text="text/css">
     <script src="main.js"></script>
     <title>Cadastro</title>
 </head>
