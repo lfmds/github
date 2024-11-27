@@ -31,10 +31,10 @@ if (isset($_POST["authemail"]) || isset($_POST["authpassword"])) { // Verifica s
                 <SCRIPT LANGUAGE='JavaScript'>
                     var userName = '" . $_SESSION["name"] . "';
                     window.alert('Bem-Vindo ' + userName);
-                    window.location.href = 'teste.php';
+                    window.location.href = 'logado.php';
                 </SCRIPT>
             ");
-        header("Location: teste.php");
+        // header("Location: logado.php");
     } else {
         echo ("
                 <SCRIPT LANGUAGE='JavaScript'>

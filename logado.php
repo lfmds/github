@@ -1,3 +1,9 @@
+<?php
+session_start();
+include("conexao.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,10 +24,11 @@
                         <h3>INFOTEC</h3>
                     </a>
                     <ul>
-                        <li class="nav-item"><a href="index.html" class="nav-link">Menu</a></li>
-                        <li class="nav-item"><a href="celulares.html" class="nav-link">Celulares</a></li>
-                        <li class="nav-item"><a href="monitores.html" class="nav-link">Monitores</a></li>
-                        <li class="nav-item"><a href="perifericos.html" class="nav-link">Periféricos</a></li>
+                        <li class="printTable"><a href="index.html" class="nav-link">Menu</a></li>
+                        <li class="printTable"><a href="celulares.html" class="nav-link">Celulares</a></li>
+                        <li class="printTable"><a href="monitores.html" class="nav-link">Monitores</a></li>
+                        <li class="printTable"><a href="perifericos.html" class="nav-link">Periféricos</a></li>
+                        <li class="printTable"><a href="imprime_tabela.php" class="nav-printTable">Imprimir Tabela</a></li>
                     </ul>
                 </div>
 
@@ -30,17 +37,17 @@
                     <div class="alinhamento">
                         <div class="entrar">
                             <a href="login.php" id="entrar">
-                                <p class="botao-entrar">Entrar</p>
+                                <p class="botao-entrar">Bem-Vindo</p>
                             </a>
-                            <p class="p2">ou</p>
+                            <!-- <p class="p2">ou</p> -->
                         </div>
                         <div class="cadastrar">
                             <a href="cadastro.php" id="cadastrar">
-                                <p class="botao-cadastrar">Cadastre-se</p>
+                                <p class="botao-cadastrar"><?php echo $_SESSION["name"];?></p>
                             </a>
                         </div>
                     </div>
-                    <a href="carrinho.html"><img src="imagens/carrinho-carrinho (1).png" class="carrinho"></a>
+                    <a href="index.html"><img src="imagens/icons8-sair-50 (1).png" class="carrinho"></a>
                 </div>
         </nav>
     </header>
