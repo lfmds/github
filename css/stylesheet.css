@@ -204,6 +204,8 @@ p {
     max-width: 720px;
     width: 100%;
     transform: translate(-50%, -60%);
+    /* background-image: linear-gradient(#000000,#292929,#000000); */
+    margin: 8vh auto;
     background-image: linear-gradient(#000000, #292929, #000000);
     box-shadow: -20px 20px 13px #000f1b;
 }
@@ -219,6 +221,8 @@ p {
 
 .form-popup .form-box {
     display: flex;
+    /* margin: 150px auto; */
+
 }
 
 .form-box .form-details {
@@ -531,6 +535,11 @@ tbody button {
     cursor: pointer;
 }
 
+.erro_cadForm{
+    color: white;
+    font-size: 12px;
+    /* margin-left: 0px; */
+    height: 2em;
 footer {
     padding: 20px;
     background-color: #000000;
