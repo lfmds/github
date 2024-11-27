@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,622 +15,663 @@
 <body class="corpo">
     <header class="header-comshadow">
         <nav class="nav-bar">
-            <div class="nav-list"> 
+            <div class="nav-list">
                 <div class="logo">
-                    <a href="index.html"><h3>INFOTEC</h3></a>
-                <ul>
-                    <li class="nav-item"><a href="index.html" class="nav-link">Menu</a></li>
-                    <li class="nav-item"><a href="celulares.html" class="nav-link">Celulares</a></li>
-                    <li class="nav-item"><a href="monitores.html" class="nav-link">Monitores</a></li>
-                    <li class="nav-item"><a href="perifericos.html" class="nav-link">Periféricos</a></li>
-                </ul>
-            </div>
-            
-            <div class="login-button">
-                <img src="imagens/do-utilizador (1).png" class="imglogin">
-                <div class="alinhamento">
-                    <div class="entrar">
-                        <a href="login.html" id="entrar"><p class="botao-entrar">Entrar</p></a>
-                        <p class="p2">ou</p>
-                    </div>
-                    <div class="cadastrar">
-                        <a href="cadastro.html" id="cadastrar"><p class="botao-cadastrar">Cadastre-se</p></a>
-                    </div>
+                    <a href="index.html">
+                        <h3>INFOTEC</h3>
+                    </a>
+                    <ul>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="celulares.html" class="nav-link">Celulares</a></li>
+                        <li class="nav-item"><a href="monitores.html" class="nav-link">Monitores</a></li>
+                        <li class="nav-item"><a href="perifericos.html" class="nav-link">Periféricos</a></li>
+                    </ul>
                 </div>
-                <a href="carrinho.html"><img src="imagens/carrinho-carrinho (1).png" class="carrinho"></a>
-            </div>
+
+                <div class="login-button">
+                    <img src="imagens/do-utilizador (1).png" class="imglogin">
+                    <div class="alinhamento">
+                        <div class="entrar">
+                            <a href="login.html" id="entrar">
+                                <p class="botao-entrar">Entrar</p>
+                            </a>
+                            <p class="p2">ou</p>
+                        </div>
+                        <div class="cadastrar">
+                            <a href="cadastro.html" id="cadastrar">
+                                <p class="botao-cadastrar">Cadastre-se</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="carrinho.html"><img src="imagens/carrinho-carrinho (1).png" class="carrinho"></a>
+                </div>
         </nav>
     </header>
 
     <main>
         <div class="page-title">Seu Carrinho</div>
-
         <div class="content">
-            <section>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Produto</th>
-                            <th>Preço</th>
-                            <th>Quantidade</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iPhone-16-removebg-preview.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 16</div>
-                                    </div>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="body-cart">
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iPhone-16-removebg-preview.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product ">Iphone 16</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$6.000</td>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$6.000</td>
 
-                            <td>
-                                    <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                     
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iphone-16-plus.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 16 Plus</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iphone-16-plus.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">Iphone 16 Plus</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$7.799</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                      
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$7.799</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iPhone-16-Pro-removebg-preview.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 16 Pro</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iPhone-16-Pro-removebg-preview.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">Iphone 16 Pro</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$8.909</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                       
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$8.909</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iphone-16-pro-max.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 16 Pro Max</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iphone-16-pro-max.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">Iphone 16 Pro Max</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$11.699</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                       
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$11.699</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iphone-15-removebg-preview.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 15</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iphone-15-removebg-preview.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">Iphone 15</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$4.580</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                          
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$4.580</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iphone-15-plus.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 15 Plus</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iphone-15-plus.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">Iphone 15 Plus</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$4.699</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                      
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$4.699</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iphone-15-pro.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 15 Pro</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iphone-15-pro.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">Iphone 15 Pro</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$5.200</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                       
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$5.200</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iphone-15-pro-max.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 15 Pro max</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iphone-15-pro-max.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">Iphone 15 Pro max</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$7.500</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                     
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$7.500</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iphone-14-removebg-preview.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 14</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iphone-14-removebg-preview.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">Iphone 14</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$3.799</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                         
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$3.799</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iphone-14-plus.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 14 Plus</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iphone-14-plus.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">Iphone 14 Plus</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$4.099</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                         
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$4.099</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iphone-13-removebg-preview.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 13</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iphone-13-removebg-preview.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">Iphone 13</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$3.699</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                          
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$3.699</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/iphone-12.png" alt="">
-                                    <div class="info">
-                                        <div class="name">Iphone 12</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/iphone-12.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">Iphone 12</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$2.490</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                           
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$2.490</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/monitor-ace-nitro.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/monitor-ace-nitro.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                           
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/monitor-alineware.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/monitor-alineware.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                     
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/monitor-odyssey.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/monitor-odyssey.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                         
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/monitor-asusrog.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/monitor-asusrog.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                       
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/monitor-benqzoe.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/monitor-benqzoe.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                       
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/monitor-aoc-agon.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/monitor-aoc-agon.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                            
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/asus-TUF.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/asus-TUF.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                           
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/monitor-kbm.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/monitor-kbm.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                          
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/monitor-aus-TUF.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/monitor-aus-TUF.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                           
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/Headset-Gamer-HyperX-Cloud III.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/Headset-Gamer-HyperX-Cloud III.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                           
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/teclas-Mecânico- K500.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/teclas-Mecânico- K500.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                          
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/MouseGamer-Hyper- Pulsefire-Haste 2.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/MouseGamer-Hyper- Pulsefire-Haste 2.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                         
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/MousepadGamerFallen-Ace-Speed.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/MousepadGamerFallen-Ace-Speed.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                            
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/HeadsetGamer-Havit.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/HeadsetGamer-Havit.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                            
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/MouseGamerLogitech-GPROXSuperlight.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/MouseGamerLogitech-GPROXSuperlight.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                            
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/Teclado-Huntsman.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/Teclado-Huntsman.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                            
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-                        <tr class="cart-product">
-                            <td>
-                                <div class="product">
-                                    <img src="imagens/Mousepad-BenQZOWIEG-SR-SE.png" alt="">
-                                    <div class="info">
-                                        <div class="name">nome do Produto</div>
-                                    </div>
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                        <td>
+                            <div class="product">
+                                <img src="imagens/Mousepad-BenQZOWIEG-SR-SE.png" alt="" class="product-img">
+                                <div class="info">
+                                    <div class="name-product">nome do Produto</div>
                                 </div>
-                            </td>
-                            <td class="price-product">R$120</td>
-                            <td>
-                                <input type="number" value="1" min="1" class="quantidade">
-                            </td>
-                            
-                            <td>
-                                <button class="remove"><i class='bx bx-x'></i></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                            </div>
+                        </td>
+                        <td class="preco-iphone">R$120</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
 
-            
+                        <td>
+                            <button class="remove"><i class='bx bx-x'></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
 
             <aside>
                 <div class="box">
-                <header>Resumo da compra</header>
-                <div class="info">
-                    <div class="espacamento1"><span>Sub-total</span><span>R$140</span></div>
-                    <div class="espacamento2"><span>Frete</span><span>Gratuito</span></div>
-                </div>
-                <footer>
-                    <span>Total</span>
-                    <span>R$140</span>
-                </footer>
+                    <header>Resumo da compra</header>
+                    <div class="info">
+                        <div class="espacamento1"><span>Sub-total</span><span class="price-subtotal">R$140</span></div>
+                        <div class="espacamento2"><span>Frete</span><span>Gratuito</span></div>
+                    </div>
+                    <footer>
+                        <span>Total</span>
+                        <span class="total-price">R$140</span>
+                    </footer>
                 </div>
                 <button class="button-finalizar">Finalizar Compra</button>
             </aside>
         </div>
     </main>
+    <footer>
+        <table class="cart-table-info">
+            <thead>
+                <div class="classificacao">
+                    <p>atendimento</p>
+                    <p>Midia Social</p>
+                    <p>Sobre a Loja</p>
+                </div>
+            </thead>
+            <tbody>
+                <div class="container-info">
+                    <div class="info">
+                        <P>Horário de atendimento: 08:00 às 20:00 - <br>
+                            Segunda a Sexta, 09:00 às 15:00 - Sabado,<br>
+                            horário de Brasília (Exceto domingo e feriados)</P>
+                        <p class="name-product ">Endereço: Rua Sao Gomes, 0000 - Centro<br>
+                            RibeirãoPreto/SP - CEP: 00000-000</p>
+                    </div>
+
+                    <div class="info">
+                        <img src="imagens/whatsapp.png" alt="">
+                        <img src="imagens/instagram.png" alt="">
+                        <img src="imagens/youtube.png" alt="">
+                    </div>
+
+                    <div class="info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Ad facilis delectus
+                            nam consequuntur officia tenetur non, <br>obcaecati iste molestias quidem in, veritatis
+                            <br>
+                            sequi est soluta eligendi rem praesentium ut eos?
+                        </p>
+                    </div>
+                </div>
+            </tbody>
+        </table>
+    </footer>
 
 
 </body>
+
 </html>
