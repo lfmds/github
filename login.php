@@ -59,7 +59,7 @@ if (isset($_POST["authemail"]) || isset($_POST["authpassword"])) { // Verifica s
 
 <body>
     <header>
-        <div class="form-entrar">
+        <div>
             <div class="form-popup">
                 <a href="index.html"><img src="imagens/x.png"></a>
                 <div class="form-box login">

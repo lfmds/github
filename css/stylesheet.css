@@ -63,7 +63,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 550;
     color: #fff;
-    white-space: nowrap;
+    white-space: nowrap;/*não deixa efetuar quebras de linhas no codigo, quando ocorrer uma mudança de espaçamento da tela*/
 }
 
 .nav-link:hover {
@@ -169,7 +169,7 @@ p {
 }
 
 .produtos:hover img {
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .produtos:hover {
@@ -202,18 +202,6 @@ p {
     cursor: pointer;
 }
 
-.corpo-login {
-    background-image: url(../imagens/fundo.login4.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.corpo-cadastro {
-    background-image: url(../imagens/fundo.login4.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .form-popup {
     border-radius: 10px;
     position: fixed;
@@ -222,9 +210,8 @@ p {
     max-width: 720px;
     width: 100%;
     transform: translate(-50%, -60%);
-    /* background-image: linear-gradient(#000000,#292929,#000000); */
+    background-image: linear-gradient(#000000,#292929,#000000);
     margin: 8vh auto;
-    background-image: linear-gradient(#000000, #292929, #000000);
     box-shadow: -20px 20px 13px #000f1b;
 }
 
@@ -239,8 +226,6 @@ p {
 
 .form-popup .form-box {
     display: flex;
-    /* margin: 150px auto; */
-
 }
 
 .form-box .form-details {
@@ -376,19 +361,6 @@ form button {
     text-transform: uppercase;
 }
 
-.segunda-col,
-.terceira-col {
-    width: 30%;
-}
-
-.segunda-col {
-    transform: translateX(-12px);
-}
-
-.terceira-col {
-    transform: translateX(-22px);
-}
-
 .corpo {
     background-image: linear-gradient(70deg, rgb(189, 189, 189)10%, rgb(228, 228, 228) 50%, rgb(189, 189, 189)70%);
 }
@@ -419,7 +391,7 @@ main {
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse;/*utilizado para determinar se o elementos irão ficar colados ou haverá um espaçamento entre eles, "ESPAÇAMENTO DAS COLUNAS DA TABELA", e collapse no final, define q serão coladas*/
 }
 
 thead tr {
@@ -513,7 +485,7 @@ tbody button {
     padding-bottom: 0;
 }
 
-.box .info>div {
+.box .info>div /*O > é um seletor de "filho direto", que significa que ele seleciona apenas os elementos <div> que são filhos diretos de .info.*/ {
     display: flex;
     justify-content: space-between;
 }
@@ -544,7 +516,7 @@ tbody button {
     text-transform: uppercase;
     display: block;
     width: 100%;
-    letter-spacing: 1px;
+    letter-spacing: 1px;/*utilizado para aumentar o espaço entre as letras*/
     font-size: 16px;
 }
 
