@@ -146,7 +146,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/*será responsável pela quebra das tags relacionadas, será tipo uma responsividade. Dessa forma diminuindo o espaço da tela, os elementos se redirecionam 
+    para se adaptarema a tela*/
     padding-top: 50px;
     background-image: linear-gradient(#221231, #341f47, #140420);
     background-color: #221231;
@@ -160,7 +161,7 @@ p {
     height: 470px;
     padding: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;/*vai organizar a tag em colunas*/
     align-items: center;
     justify-content: center;
     border-radius: 1.2rem;

@@ -48,23 +48,27 @@
         </nav>
     </header>
 
-    <main>
-        <div class="page-title">Seu Carrinho</div>
-        <div class="content">
-            <table class="cart-table">
-                <thead>
-                    <tr>
-                        <th>Produto</th>
+    <main> <!-- tag main, serve para declarar nosso conteudo principal da pagina, com conteúdos únicas da página, e nele será atribuido padding: 0 30px 30px; e a uma font para todas as palavras -->
+        <div class="page-title">Seu Carrinho</div> <!-- Criamos um título, contendo css font-size: 40px;padding: 50px 0; text-align: center;-->
+        <div class="content"><!-- foi criado uma div para conter nossa tabela ("um bloco"). Possui css: "display: flex (alinha o elementos q estão dentro dessa tag um ao lado do outro);"  "Chma sua class novamente, 
+            porém selecionando a class sction, com isso direcionando todos style para essa tag: content section {flex: 1;} (faz com que o elemento da tag relacionada, assuma o máximo de largura da página);" 
+            "ocorre a mesma ação q aconteceu com a tag section, mas selecionamos a tag side agr: .content aside {margin-left: 40px; min-width: 250px;} (determina o tamanho da box do valor da compra)"  -->
+            <table class="cart-table"><!-- Declaramos uma table, pelo fato que quando cria-se uma tabela, se utiliza tag table para ser uma conteiner dessa tabela e declaramos nela uma class, com style padding-left: 
+                28%; padding-right: 15%; width: 100%; margin-top: 30px;}-->
+                <thead><!-- essa tag agrupa o conteúdo do cabeçalho da tabela-->
+                    <tr><!--define uma linha da tabela, css: thead tr {border-bottom: 1px solid #000000;}-->
+                        <th>Produto</th><!--são as divisões de colunas, th(é utilizada para cabeçalho), css: thead th {text-align: left; padding-bottom: 10px; text-transform: uppercase; color: #555; }-->
                         <th>Preço</th>
                         <th>Quantidade</th>
                         <th></th>
                     </tr>
                 </thead>
-                <tbody class="body-cart">
-                    <tr class="cart-product">
+                <tbody><!-- essa tag agrupa o conteúdo do corpo da tabela-->
+                    <tr>
                         <td>
-                            <div class="product">
-                                <img src="imagens/iPhone-16-removebg-preview.png" alt="" class="product-img">
+                            <div class="product"><!--Utilizamos div, para q n ocorra uma quebra na interação entre as tag, e disfazendo o visual. dessa forma contendo as tags em containers, css: 
+                                .product {display: flex; align-items: center; }-->
+                                <img src="imagens/iPhone-16-removebg-preview.png" alt="" class="product-img"><!--.product img {border-radius: 6px; width: 84px; height: 100px;}-->
                                 <div class="info">
                                     <div class="name-product ">Iphone 16</div>
                                 </div>
@@ -81,7 +85,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/iphone-16-plus.png" alt="" class="product-img">
@@ -100,7 +104,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr >
                         <td>
                             <div class="product">
                                 <img src="imagens/iPhone-16-Pro-removebg-preview.png" alt="" class="product-img">
@@ -119,7 +123,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/iphone-16-pro-max.png" alt="" class="product-img">
@@ -138,7 +142,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/iphone-15-removebg-preview.png" alt="" class="product-img">
@@ -157,7 +161,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/iphone-15-plus.png" alt="" class="product-img">
@@ -176,7 +180,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/iphone-15-pro.png" alt="" class="product-img">
@@ -195,7 +199,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/iphone-15-pro-max.png" alt="" class="product-img">
@@ -214,7 +218,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/iphone-14-removebg-preview.png" alt="" class="product-img">
@@ -233,7 +237,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/iphone-14-plus.png" alt="" class="product-img">
@@ -252,7 +256,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/iphone-13-removebg-preview.png" alt="" class="product-img">
@@ -271,7 +275,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/iphone-12.png" alt="" class="product-img">
@@ -290,7 +294,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/monitor-ace-nitro.png" alt="" class="product-img">
@@ -309,7 +313,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/monitor-alineware.png" alt="" class="product-img">
@@ -328,7 +332,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/monitor-odyssey.png" alt="" class="product-img">
@@ -347,7 +351,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/monitor-asusrog.png" alt="" class="product-img">
@@ -366,7 +370,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/monitor-benqzoe.png" alt="" class="product-img">
@@ -385,7 +389,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/monitor-aoc-agon.png" alt="" class="product-img">
@@ -404,7 +408,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/asus-TUF.png" alt="" class="product-img">
@@ -423,7 +427,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/monitor-kbm.png" alt="" class="product-img">
@@ -442,7 +446,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/monitor-aus-TUF.png" alt="" class="product-img">
@@ -461,7 +465,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/Headset-Gamer-HyperX-Cloud III.png" alt="" class="product-img">
@@ -480,7 +484,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/teclas-Mecânico- K500.png" alt="" class="product-img">
@@ -499,7 +503,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/MouseGamer-Hyper- Pulsefire-Haste 2.png" alt="" class="product-img">
@@ -518,7 +522,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/MousepadGamerFallen-Ace-Speed.png" alt="" class="product-img">
@@ -537,7 +541,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/HeadsetGamer-Havit.png" alt="" class="product-img">
@@ -556,7 +560,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/MouseGamerLogitech-GPROXSuperlight.png" alt="" class="product-img">
@@ -575,7 +579,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/Teclado-Huntsman.png" alt="" class="product-img">
@@ -594,7 +598,7 @@
                         </td>
                     </tr>
 
-                    <tr class="cart-product">
+                    <tr>
                         <td>
                             <div class="product">
                                 <img src="imagens/Mousepad-BenQZOWIEG-SR-SE.png" alt="" class="product-img">
@@ -615,17 +619,14 @@
                 </tbody>
             </table>
 
-
-
-
-            <aside>
+            <aside><!--Indica que tem uma section aparte do codigo principal, isso semânticamente, indica para nosso código html que o cod dentro dessa tag, ficará abaixo da tag contsainer anterior-->
                 <div class="box">
-                    <header>Resumo da compra</header>
+                    <header>Resumo da compra</header><!--pq n theader? pelo fato de não declararmos uma tabelo, por isso devemos utilizar header-->
                     <div class="info">
                         <div class="espacamento1"><span>Sub-total</span><span class="price-subtotal">R$140</span></div>
                         <div class="espacamento2"><span>Frete</span><span>Gratuito</span></div>
                     </div>
-                    <footer>
+                    <footer><!--indica que essa tag sera o container e tem a função de rodapé da página-->
                         <span>Total</span>
                         <span class="total-price">R$140</span>
                     </footer>
@@ -634,7 +635,8 @@
             </aside>
         </div>
     </main>
-    <footer>
+
+    <footer><!--fizemos o rodapé global da nossa página-->
         <table class="cart-table-info">
             <thead>
                 <div class="classificacao">
