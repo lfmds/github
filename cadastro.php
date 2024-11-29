@@ -1,4 +1,4 @@
-<!-- Cadastro -->
+<!-- Cadastro Luiz fez o código -->
 <?php
 include("conexao.php");
 
@@ -65,7 +65,7 @@ if (isset($_POST["name"]) || isset($_POST["surname"]) || isset($_POST["email"]) 
     <title>Cadastro</title>
 </head>
 
-<body>
+<body class="corpo_cadastro">
     <header>
         <div class="form-popup">
             <a href="index.html"><img src="imagens/x.png"></a>

@@ -1,3 +1,4 @@
+/*Luiz fez o código*/ 
 function confirmPolicy(){
     var result = '';
     const items = document.getElementsByName('policy');

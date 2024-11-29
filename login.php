@@ -1,3 +1,4 @@
+<!--Luiz fez o código-->
 <!-- Login -->
 <?php
 include("conexao.php");
@@ -57,7 +58,7 @@ if (isset($_POST["authemail"]) || isset($_POST["authpassword"])) { // Verifica s
     <title>Login</title>
 </head>
 
-<body>
+<body class="corpo_login">
     <header>
         <div>
             <div class="form-popup">
